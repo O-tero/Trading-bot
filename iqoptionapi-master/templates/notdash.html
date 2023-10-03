@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+ <body>
+  <h1>Hello Plotly (but not Dash)</h1>
+  <div id='chart' class='chart'”></div>
+  {% block body %}
+  <table>
+    {% for value in data %}
+       <tr>
+            <th> {{ my_blc }} </th>
+       </tr>
+    {% endfor %}
+    </table>
+    {{data}}
+  {% endblock %}
+  
+
+<script>
+  // Defining custom functions
+  function sayHello(){
+      alert("Hello World! sayHello() function executed successfully!");
+  }
+   
+  function sayHi(){
+      alert("Hi There! sayHi() function executed successfully!");
+  }
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+  }
+  </script>
+  
+  <button type="button" onclick="sayHello();sayHi();myFunction();">Click Me</button>
+  <p id="demo"></p>
+</body>
+</html>
+
+<script>
+  // Defining custom functions
+  function sayHello(){
+      alert("Hello World! sayHello() function executed successfully!");
+  }
+   
+  function sayHi(){
+      alert("Hi There! sayHi() function executed successfully!");
+  }
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+  }
+  </script>
+  <div class="col-md-12">
+     <button class="get_now" type="button" onclick="sayHello();sayHi();myFunction();">Click Me</button>
+  </div>
